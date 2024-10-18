@@ -1,0 +1,169 @@
+/* HomePage.css */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.userCard {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.userPhoto {
+  margin: auto auto 15px auto;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 35px;
+  background-color: rgb(234, 234, 234);
+  border: 0.3px solid rgb(215, 215, 215);
+}
+
+.detailRow {
+  padding-bottom: 10px;
+  color: #666;
+}
+
+.detailRow:last-child {
+  padding-bottom: 0px;
+}
+
+
+.success-message {
+  padding-top: 10px;
+}
+
+.userHeader {
+  border-width: 100%;
+  border-bottom: 0.5px solid transparent;
+  /* Transparent border */
+  box-shadow: 0 3px 10px -10px rgba(0, 0, 0, 0.5);
+  /* Cloudy shadow effect */
+  padding-bottom: 20px;
+}
+
+.user-profile-icon-parent {
+  margin-bottom: 20px;
+}
+
+.user-profile-icon {
+  vertical-align: middle;
+  color: #bbb;
+}
+
+.userCard h1,
+.userCard h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.userCard h2 {
+  font-size: 18px;
+}
+
+.userCard h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+
+.userDetails {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.icon-content-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.email-phone-icons-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailRow {
+  color: #808080;
+}
+
+.buttonGroup {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editButton {
+  width: 100%;
+  margin-right: 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #1e90ff;
+  color: #1e90ff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  filter: brightness(0.97);
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid red;
+  padding: 8px;
+  color: red;
+  /* Dodger Blue text */
+  cursor: pointer;
+}
+
+.edit-icon-label-container {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: white;
+  /* Dodger Blue text */
+}
+
+button:hover {
+  filter: brightness(0.96);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 10px;
+}
