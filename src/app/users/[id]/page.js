@@ -1,11 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import "../../home-page.css";
-import { useRouter } from "next/navigation";
 
 const EditUser = ({ params }) => {
     const { id } = params;
-    const router = useRouter();
+    const [successfulMessage, setSuccessfulMessage] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const [user, setUser] = useState({
         name: "",
@@ -18,8 +18,6 @@ const EditUser = ({ params }) => {
         }
     });
 
-    const [successfulMessage, setSuccessfulMessage] = useState(false);
-    const [isLoading, setIsLoading] = useState(true);
 
     const fetchUserData = async () => {
         try {
@@ -52,13 +50,9 @@ const EditUser = ({ params }) => {
             });
             if (res.ok) {
                 const updatedUser = await res.json();
-                console.log(`User with id: ${id} has been edited`);
                 setSuccessfulMessage(true);
-                console.log(`User with id: ${id} is updated`);
+                console.log(`User with id: ${id} has been edited`);
                 console.log("Updated User Data:", updatedUser);
-                // setTimeout(() => {
-                //     router.push("/");
-                // }, 1500);
             }
         } catch (error) {
             console.log(error.message);

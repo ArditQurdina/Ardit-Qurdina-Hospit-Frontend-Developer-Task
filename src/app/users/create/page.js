@@ -1,7 +1,6 @@
 "use client";
-
 import { useState } from "react";
-import '../home-page.css';
+import "../../home-page.css";
 
 const CreateUser = () => {
     const [createdUserName, setCreatedUserName] = useState("");
@@ -78,7 +77,7 @@ const CreateUser = () => {
                 <div className="userFormGroup">
                     <label className="userLabel">Phone</label>
                     <input 
-                        type="tel" // Changed to tel
+                        type="tel"
                         required
                         className="userInput"
                         value={createdUserPhone}

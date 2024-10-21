@@ -8,11 +8,6 @@
   justify-content: space-between;
 }
 
-.success-message {
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-
 .userCard {
   text-align: center;
   padding: 40px;
@@ -38,10 +33,6 @@
 
 .detailRow:last-child {
   padding-bottom: 0px;
-}
-
-.success-message {
-  padding-top: 10px;
 }
 
 .userHeader {
@@ -198,12 +189,12 @@ button:hover {
 }
 
 .userSuccessMessage {
-  background-color: #d4edda;
-  color: #14331b;
+  background-color: #c2facf;
+  color: #355d3e;
   border: 1px solid #c3e6cb;
   padding: 10px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   text-align: center;
   transition: opacity 0.5s ease-in-out;
@@ -245,7 +236,7 @@ button:hover {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: border-color 0.3s;
   box-sizing: border-box;
 }
@@ -259,7 +250,7 @@ button:hover {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 16px;
@@ -267,13 +258,4 @@ button:hover {
 
 .userButton:hover {
   filter: brightness(0.95);
-}
-
-.success-message {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  color: #155724;
-  border-radius: 5px;
 }
