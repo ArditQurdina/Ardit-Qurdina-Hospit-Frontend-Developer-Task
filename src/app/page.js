@@ -51,7 +51,7 @@ const HomePage = () => {
   };
 
   if (isLoading) {
-    return <p className="loading-status">Loading user data...</p>;
+    return <p className="loading-status">Loading users data...</p>;
   }
 
   return (
