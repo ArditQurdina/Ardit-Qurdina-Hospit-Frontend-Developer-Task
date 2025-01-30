@@ -50,10 +50,6 @@ const HomePage = () => {
     }
   };
 
-  if (isLoading) {
-    return <p className="loading-status">Loading users data...</p>;
-  }
-
   return (
     <div className="container">
       {users.map((user) => (
